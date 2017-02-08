@@ -32,12 +32,15 @@ Dependencies: MSVC 2013 or later, CMake 2.8.6 or later, and Boost 1.55. You may 
 * http://www.boost.org/
 
 To build boost:
+```
+
 Download boost 1.58.0 from http://www.boost.org/
 Extract files (e.g. “C:\boost_1_58_0”)
 Start Visual Studio 2013 x64 command prompt (“VS2013 x64 Native Tools Command Prompt“)
 Change to boost directory (e.g. “cd C:\thirdparty\vs2013\x64\boost_1_58_0”)
 Execute .\bootstrap.bat
 Execute b2 -j8 --toolset=msvc-14.0 address-model=64 --build-type=complete stage
+```
 
 
 To build, change to a directory where this file is located, and run theas commands:
