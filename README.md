@@ -27,16 +27,25 @@ To build, change to a directory where this file is located, and run `make`. The 
 ### On Windows
 Dependencies: MSVC 2013 or later, CMake 2.8.6 or later, and Boost 1.55. You may download them from:
 
-* http://www.microsoft.com/
+* https://www.microsoft.com/en-us/download/details.aspx?id=40784
 * http://www.cmake.org/
 * http://www.boost.org/
+
+To build boost:
+Download boost 1.58.0 from http://www.boost.org/
+Extract files (e.g. “C:\boost_1_58_0”)
+Start Visual Studio 2013 x64 command prompt (“VS2013 x64 Native Tools Command Prompt“)
+Change to boost directory (e.g. “cd C:\thirdparty\vs2013\x64\boost_1_58_0”)
+Execute .\bootstrap.bat
+Execute b2 -j8 --toolset=msvc-14.0 address-model=64 --build-type=complete stage
+
 
 To build, change to a directory where this file is located, and run theas commands:
 ```
 mkdir build
 cd build
-cmake -G "Visual Studio 12 Win64" ..
+cmake.exe -DBOOST_ROOT=C:\boost_1_58_0 -DBOOST_LIBRARYDIR=C:\boost_1_58_0\stage\lib -G "Visual Studio 14 Win64..
 ```
 
-And then do Build.
+And then open in Visual studio and do Build.
 Good luck!
