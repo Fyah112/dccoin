@@ -1,4 +1,9 @@
-This is the reference code for [CryptoNote](https://cryptonote.org) cryptocurrency protocol.
+DISCLAIMER
+This coin is only intended for team inspirion.
+I controll the seeds and will blacklist you, if you take credits for this.
+No seeds == no network :)
+If you do modify this code please give proper credits.
+Thanks!
 
 DCcoin
 
